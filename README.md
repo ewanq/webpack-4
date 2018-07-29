@@ -1,5 +1,4 @@
-# webpack-4
-基础使用
+# 基础使用
 1 cd project  &&  npm init  &&  创建dist 、src/index.js、example/test.html
 2 npm install webpack webpack-cli --save-dev
 3 package.json
@@ -34,7 +33,7 @@ example/test.html
 <script> document.getElementById('btn').onclick = function(){ pass() } </script>
 
 
-使用ES6语法
+# 使用ES6语法
 .babelrc
 {
 "presets": ["env"]
