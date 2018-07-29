@@ -4,12 +4,12 @@
 - 3 package.json
 ```
 "scripts": {
->>"dev": "webpack --mode development",
->>"build": "webpack --mode production"
+  "dev": "webpack --mode development",
+  "build": "webpack --mode production"
 },
 "devDependencies": {
->>"webpack": "^4.16.3",
->>"webpack-cli": "^3.1.0"
+  "webpack": "^4.16.3",
+  "webpack-cli": "^3.1.0"
 }
 ```
 - 4 npm run build 或 npm run dev
@@ -19,18 +19,18 @@
 * -webpack.config.js
 ```
 module.exports = {
-output: {
-path: __dirname,
-filename: './dist/main.js',
-library: 'pass',
-libraryTarget: 'umd'
-}
+  output: {
+    path: __dirname,
+    filename: './dist/main.js',
+    library: 'pass',
+    libraryTarget: 'umd'
+  }
 }
 ```
 *-src/index.js
 ```
 module.exports = function(){
->>alert('函数调用成功');
+  alert('函数调用成功');
 }
 ```
 * -example/test.html
