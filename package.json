@@ -1,0 +1,19 @@
+{
+  "name": "webpack-4",
+  "version": "1.0.0",
+  "description": "webpack 应用级别块",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "wanyuaning",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
+  }
+}
