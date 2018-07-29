@@ -43,27 +43,31 @@ module.exports = function(){
 ```
 
 ## 使用ES6语法
-.babelrc
+  .babelrc
+```
 {
 "presets": ["env"]
 }
-webpack.config.js
+```
+  webpack.config.js
+```
 module.exports = {
-output: {
-path: __dirname,
-filename: './dist/main.js',
-library: 'pass',
-libraryTarget: 'umd'
+  output: {
+    path: __dirname,
+    filename: './dist/main.js',
+    library: 'pass',
+    libraryTarget: 'umd'
+  }
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      }
+    ]
+  }
 }
-module: {
-rules: [
-{
-test: /\.js$/,
-exclude: /node_modules/,
-use: {
-loader: "babel-loader"
-}
-}
-]
-}
-}
+```
