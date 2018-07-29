@@ -4,19 +4,20 @@
 - 3 package.json
 ```
 "scripts": {
-"dev": "webpack --mode development",
-"build": "webpack --mode production"
+>>"dev": "webpack --mode development",
+>>"build": "webpack --mode production"
 },
 "devDependencies": {
-"webpack": "^4.16.3",
-"webpack-cli": "^3.1.0"
+>>"webpack": "^4.16.3",
+>>"webpack-cli": "^3.1.0"
 }
 ```
 - 4 npm run build 或 npm run dev
 
->>-package.json
+* -package.json
 参考 3
->>-webpack.config.js
+* -webpack.config.js
+```
 module.exports = {
 output: {
 path: __dirname,
@@ -25,15 +26,19 @@ library: 'pass',
 libraryTarget: 'umd'
 }
 }
->>-src/index.js
+```
+*-src/index.js
+```
 module.exports = function(){
-alert('函数调用成功');
+>>alert('函数调用成功');
 }
->>-example/test.html
+```
+* -example/test.html
+```
 <button id="btn">测度调用打包文件里的函数</button>
 <script src="../dist/main.js"></script>
 <script> document.getElementById('btn').onclick = function(){ pass() } </script>
-
+```
 
 ## 使用ES6语法
 .babelrc
