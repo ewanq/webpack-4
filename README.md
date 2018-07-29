@@ -2,10 +2,10 @@
 - 1 cd project  &&  npm init  &&  创建dist 、src/index.js、example/test.html
 - 2 npm install webpack webpack-cli --save-dev
 - 3 package.json
->>"scripts": {
->>>"dev": "webpack --mode development",
->>>"build": "webpack --mode production"
-<<},
+```"scripts": {
+```"dev": "webpack --mode development",
+```"build": "webpack --mode production"
+```},
 >>"devDependencies": {
 >>>"webpack": "^4.16.3",
 >>>"webpack-cli": "^3.1.0"
