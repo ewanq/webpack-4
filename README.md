@@ -5,11 +5,11 @@
 >>"scripts": {
 >>>"dev": "webpack --mode development",
 >>>"build": "webpack --mode production"
->>},
+<<},
 >>"devDependencies": {
 >>>"webpack": "^4.16.3",
 >>>"webpack-cli": "^3.1.0"
->>}
+<<}
 - 4 npm run build 或 npm run dev
 
 >>-package.json
