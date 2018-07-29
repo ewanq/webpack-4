@@ -14,9 +14,11 @@
 ```
 - 4 npm run build 或 npm run dev
 
-* -package.json
+package.json
+```
 参考 3
-* -webpack.config.js
+```
+webpack.config.js
 ```
 module.exports = {
   output: {
@@ -27,13 +29,13 @@ module.exports = {
   }
 }
 ```
-*-src/index.js
+  src/index.js
 ```
 module.exports = function(){
   alert('函数调用成功');
 }
 ```
-* -example/test.html
+  example/test.html
 ```
 <button id="btn">测度调用打包文件里的函数</button>
 <script src="../dist/main.js"></script>
