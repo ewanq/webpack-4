@@ -18,7 +18,7 @@ package.json
 ```
 参考 3
 ```
-webpack.config.js
+<font color=#00ffff size=6>webpack.config.js</font>
 ```
 module.exports = {
   output: {
